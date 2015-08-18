@@ -1,0 +1,19 @@
+$basic-color: rgb(0, 194, 239);
+$text-color: rgb(70, 73, 79);
+
+
+
+
+//mixina ktora poprawia widocznosc liter- dodaje bialy cien
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+} 
+
+
+//funkcje do zmiany przezroczystosci kolorow podstawowych
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}

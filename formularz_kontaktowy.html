@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="kontakt projektowanie stron www nowy sącz, tworzenie stron internetowych, programowanie stron www,  projektowanie stron internetowych, CMS, kraków, warszawa, nowy sącz ">
+    <meta name="description" content="Projektowanie stron internetowych, Skontaktuj się ze mną, Strony inne niż wszystkie, Sprawdź moją ofertę, Strony www, formularze i blogi, Wordpress">
+    <meta name="author" content="bludesign.pl">
+    <meta name="robots" content="all">
+    <meta name="copyright" content="Copyright (c) 2015 Agnieszka Górz">
+    <meta name="language" content="pl">
+	<meta name="classification" content="TWORZENIE STRON">
+    
+    <link rel="icon" href="../img/fav2.gif"> 
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300&amp;subset=latin-ext" rel="stylesheet" />
+    <link rel="stylesheet" href="form/css/style.css">
+<title>Formularz kontaktowy- bludesign.pl - projektowanie stron internetowych</title>
+</head>
+
+<body>
+<div id="container">
+    <img src="img/brain-min.jpg" alt="brain obraz mózgu"/>
+	<h1>Formluarz kontaktowy</h1>
+    <div class="clear"></div>
+    <p>Niezależnie od tego jakie są Twoje potrzeby i cele, skontaktuj się ze mną a postaram się znaleźć dla Ciebie optymalne rozwiązanie.</p>
+    <p>Jeżeli wolisz kontakt bezpośredni zadzwoń:<span id="nrtel"> +48 733 029 979</span>, napisz maila <span id="mail">kontakt@bludesign.pl</span> albo przelej swoje myśli do formularza poniżej.</p>
+    <form action="form/php/send.php" method="post" id="contactform">
+        <fieldset>
+            <input type="text" name="contact_name" placeholder="Imię i nazwisko" required tabindex="1" />
+            <input type="email" name="contact_email" placeholder="Adres e-mail" required tabindex="2" />
+            <textarea rows="5" columns="10" name="contact_body" placeholder="Treść wiadomości" required tabindex="3"></textarea>
+            <input type="submit" value="Wyślij" tabindex="5" />Podaj wynik: <span class="form_check_1"></span> + <span class="form_check_2"></span> = <input type="text" name="contact_check" maxlength="2" tabindex="4" />
+            <input type="hidden" name="contact_check_data" value="" />
+        </fieldset>
+    </form>
+</div>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="form/main.js"></script>
+</body>
+</html>
